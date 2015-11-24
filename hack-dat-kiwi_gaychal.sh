@@ -24,7 +24,7 @@ echo "Fixing File: "gaychal$j.php
 
 sed -i 's/5+5=9/5+5=10/' gaychal$j.php
 sed -i 's/echo/<?php echo/' gaychal$j.php
-echo " ?>" >> gaychal$i.php
+echo " ?>" >> gaychal$j.php
 
 echo "-----A WINRAR IS YOU!-----"
 
