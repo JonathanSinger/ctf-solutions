@@ -10,13 +10,22 @@ i="0"
 k="eval"
 
 while [ $k = 'eval' ]; do
-sed -i 's/eval/<?php\necho/' gaychal$i.php
+echo gaychal$i.php: $k
+sed -i 's/eval/<?php echo/' gaychal$i.php
 echo " ?>" >> gaychal$i.php
 j=$((i+1))
 php -f gaychal$i.php > gaychal$j.php
 k=$(head -c4 gaychal$j.php)
-echo $k
 i=$((i+1))
 done
 
-echo "Fix File: "$j
+echo gaychal$j.php: $k
+echo "Fixing File: "gaychal$j.php
+
+sed -i 's/5+5=9/5+5=10/' gaychal$j.php
+sed -i 's/echo/<?php echo/' gaychal$j.php
+echo " ?>" >> gaychal$i.php
+
+echo "-----A WINRAR IS YOU!-----"
+
+php -f gaychal$j.php
