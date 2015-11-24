@@ -1,4 +1,7 @@
 #!/bin/bash
+##Simply run in the same folder as the challenge
+##The final output will be indicated so that you can fix the math
+##Then run the PHP file one last time once fixed
 
 sed -i 's/<php //' gaychal.txt
 mv gaychal.txt gaychal0.php
