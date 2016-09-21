@@ -1,3 +1,9 @@
+#Jonathan Singer TW:@jonathansinger
+#my crap solution, but it works
+#multiple everything by 100 so you dont work in floats
+#iterate through the array and remove each amount
+#solve over and over until you win!
+
 import socket
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
